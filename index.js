@@ -12,10 +12,9 @@ function save() {
     let countStr = count + " - "
     saveEl.textContent += countStr
     countEl.textContent = 0
+    let total += number(count)
+    totalEl.textContent = total
     count = 0
 }
 
-function total() {
-   let total += number(count)
-    totalEl.textContent = total
-}
+
